@@ -1,0 +1,24 @@
+#logosection{
+        display: grid;
+        grid-template-columns: auto 100vh auto;
+        grid-template-areas: ". logo . ";
+    
+        @include md{
+            grid-template-columns: auto 60vw auto;
+        }
+        @include lg{
+            grid-template-columns: auto 60vw auto;
+        }
+        @include xl{
+            grid-template-columns: auto 70vw auto;
+        }
+    
+        #logo{
+            padding-top: 20%;
+            grid-area: logo;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
