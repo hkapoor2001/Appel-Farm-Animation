@@ -86,7 +86,7 @@ function drawline4(){
 
 function expandcolors1(){
     const tl = gsap.timeline();
-    tl.from("#colors-1",{scaleX:1, scaleY:1})
+    tl.from("#colors-1",{scaleX:.01, scaleY:.01})
     tl.to("#colors-1",{scaleX:70, scaleY:79, transformOrigin: "50% 50%", duration:3, ease:"none"})
 
     return tl;
@@ -94,7 +94,7 @@ function expandcolors1(){
 
 function expandcolors2(){
     const tl = gsap.timeline();
-    tl.from("#colors-2",{scaleX:1, scaleY:1})
+    tl.from("#colors-2",{scaleX:.01, scaleY:.01})
     tl.to("#colors-2",{scaleX:70, scaleY:79, transformOrigin: "50% 50%", duration:3, ease:"none"})
     return tl;
 }
